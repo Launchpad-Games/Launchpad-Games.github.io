@@ -1,7 +1,7 @@
 :root{
 	--main-background: #00010f;
 	--main-fonts-color: #fff;
-	--main-decor-color:#8700f5;
+	--main-decor-color:#981aff;
 	--main-font-family: "Roboto Light", sans-serif;
 }
 
@@ -92,14 +92,14 @@ a.nav-link{
 
 .intro {
 	text-align:center;
-    color: var(--main-fonts-color);
+  color: var(--main-fonts-color);
 	z-index: 1;
 	margin: auto;
 	padding: 20px;
 }
 
 .intro  p{
-    margin: 5px;
+  margin: 5px;
 	font-size:1.2rem;
 	font-family: var(--main-font-family);
 	text-align:center;
@@ -237,6 +237,13 @@ a.nav-link{
 }
 	
 #socials p{
+	padding:10px;
+	text-align:center;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+
+.mailLink{
 	padding:10px;
 	text-align:center;
 	font-size:1.2rem;
@@ -760,4 +767,67 @@ hr {
 
 .nav-active{
 	transform:translatex(0%);
+}
+
+/* COMPACT CAPTCHA */
+
+.capbox {
+	background-color: #00010f;
+	background-image: linear-gradient(#1c1c1c, #121212);
+	border: var(--main-decor-color) 0px solid;
+	border-width: 2px 2px 2px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.capbox-inner {
+	font-family: var(--main-font-family);
+	color: #ffffff;
+	background-color: #121212;
+	margin: 0px auto 0px auto;
+	padding: 3px 10px 5px 10px;
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#CaptchaDiv {
+	color: #ffffff;
+	font-family: var(--main-font-family);
+	/* font-style: italic; */
+	text-align: center;
+	vertical-align: middle;
+	background-color: #121212;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 8px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+}
+
+#CaptchaInput {
+	border: var(--main-decor-color) 2px solid;
+	margin: 3px 0px 1px 0px;
+	width: 105px;
+}
+
+.subbutx3{
+  color: #ffffff;
+	font-family: var(--main-font-family);
+	/* font-style: italic; */
+	text-align: center;
+	vertical-align: middle;
+	background-color: #121212;
+	user-select: none;
+	display: inline-block;
+	padding: 3px 8px 3px 8px;
+	margin-right: 4px;
+	border-radius: 4px;
+  border: var(--main-decor-color) 2px solid;
+	margin: 3px 0px 1px 0px;
+	width: 105px;
 }

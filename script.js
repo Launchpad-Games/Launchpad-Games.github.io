@@ -35,26 +35,3 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
-
-
-async function submitForm() {
-      const signUpForm = document.getElementById('signUpForm');
-      const formData = new FormData(signUpForm);
-
-      // Workaround, hCaptcha adds two keys with same value
-      formData.delete('g-recaptcha-response');
-
-      const response = await fetch('/signup', {
-        method: 'POST',
-        body: formData
-      });
-
-      const ok = await response.json();
-      if (ok) {
-        console.log("a")
-      } else {
-        console.log('something went wrong');
-        window.location.href = "index.html";
-      }
-
-    }
