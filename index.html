@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Launchpad Games</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-  <link rel="icon" href="/media/LaunchpadLogo.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://hcaptcha.com/1/api.js" async defer> </script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <script src="script.js"></script>
-</head>
-
-<body>
-  <div class="container">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Launchpad Games</title>
+    <meta content="Launchpad Games" property="og:title" />
+    <meta content="The Home of GrappleShot." property="og:description" />
+    <meta content="https://www.launchpad-games.com" property="og:url" />
+    <meta content="https://www.launchpad-games.com/media/rocketship.png" property="og:image" />
+    <meta content="#7700ff" data-react-helmet="true" name="theme-color" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="icon" href="/media/LaunchpadLogo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://hcaptcha.com/1/api.js" async defer> </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
     <!--────────────────Header───────────────-->
     <header>
       <a class="logo" href="#home">
-        <img src="/media/title.png" />
+      <img src="/media/title.png" />
       </a>
       <nav>
         <ul class="nav-bar">
@@ -27,6 +30,7 @@
           <li><a class="nav-link active" href="#home">Home</a></li>
           <li><a class="nav-link" href="#games">Games</a></li>
           <li><a class="nav-link" href="#team">Team</a></li>
+          <li><a class="nav-link" href="#shop">Store</a></li>
           <li><a class="nav-link" href="#socials">Socials</a></li>
         </ul>
         <div class="hamburger">
@@ -41,7 +45,8 @@
       <div id="home">
         <div class="filter"></div>
         <section class="intro">
-          <h3>Launchpad Games
+          <h3>
+            Launchpad Games
             <hr>
           </h3>
           <p>Home of the Creators of GrappleShot</p>
@@ -50,129 +55,118 @@
       </div>
       <!--───────────────Projects───────────────-->
       <div id="games">
-        <h3>Games
+      <h3>
+        Games
+        <hr>
+      </h3>
+      <p>Recent projects from us</p>
+      <div class="work-box">
+      <div class="work">
+        <!--───────────────card───────────────-->
+<!--         <div class="card">
+          <img class="work-img" src="/media/games/percept.png">
+          <a href="https://grappleshot.launchpad-games.com" target="_blank">
+            <div class="work-content">Percept: Non-Euclidian VR Puzzle Game<br>May 2022 - In development</div>
+          </a>
+        </div> -->
+        <div class="card">
+          <img class="work-img" src="/media/games/grappleshot.png">
+          <a href="https://grappleshot.launchpad-games.com" target="_blank">
+            <div class="work-content">GrappleShot: movement focused FPS<br>August 2020 - In dev</div>
+          </a>
+        </div>
+      </div>
+      <!--───────────────Team───────────────-->
+      <div id="team">
+      <h3>
+        Team
+        <hr>
+      </h3>
+      <p>These people are pretty cool.</p>
+      <div class="work-box">
+      <div class="work">
+        <!--───────────────card───────────────-->
+        <div class="card">
+          <a href="https://bit.ly/maxb0tbeep" target="_blank">
+            <img class="work-img" src="/media/people/maxb0tbeep.png">
+            <div class="work-content">Maxb0tbeep<br>Founder & Developer</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.youtube.com/channel/UC72e2Z9DXv-HFpOqjoR-3mw" target="_blank">
+            <img class="work-img" src="/media/people/coolboi21.png">
+            <div class="work-content">Coolboi_21<br>Developer</div>
+          </a>
+        </div>
+        <!--                 <div class="card">
+          <a href="https://www.twitch.tv/blueloserttv" target="_blank">
+            <img class="work-img" src="/media/people/blueloserttv.png">    
+            <div class="work-content">BlueLoserTTV<br></br>Musician</div>
+          </a>
+          </div> -->
+      </div>
+      <div id="shop">
+      <h3>
+        Shop
+        <hr>
+      </h3>
+      <p>Support us and get epic loot</p>
+      <div class="work-box">
+      <div class="work">
+        <!--───────────────card───────────────-->
+        <div class="card">
+          <a href="https://store.launchpad-games.com/listing/launchpad-games?product=1027" target="_blank">
+            <img class="work-img" src="/media/items/rocket_zip.png">
+            <div class="work-content">Rocketship Zip-Up Sweatshirt</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://store.launchpad-games.com/listing/grappleshot-logo?product=2" target="_blank">
+            <img class="work-img" src="/media/items/grappleshot_tee.png">
+            <div class="work-content">GrappleShot Logo Tee-Shirt</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://store.launchpad-games.com/listing/grappleshot-plant-nft?product=212" target="_blank">
+            <img class="work-img" src="/media/items/plant_hoodie.png">
+            <div class="work-content">GrappleShot Plant Pull-Over Hoodie</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://store.launchpad-games.com/listing/launchpad-games-sticker?product=794" target="_blank">
+            <img class="work-img" src="/media/items/rocket_sticker.png">
+            <div class="work-content">LP Rocketship Die-Cut Sticker</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://store.launchpad-games.com" target="_blank">
+            <img class="work-img" src="/media/rocketship.png">
+            <div class="work-content">Click here to see the rest of the items.</div>
+          </a>
+        </div>
+      </div>
+      <!--──────────────Contact────────────────-->
+      <div id="socials">
+        <!--────social media links─────-->
+        <h3>
+          Social Links
           <hr>
         </h3>
-        <p>Recent projects from us</p>
-        <div class="work-box">
-          <div class="work">
-            <!--───────────────card───────────────-->
-            <div class="card">
-              <img class="work-img" src="/media/guns_square.png">
-              <a href="https://grappleshot.launchpad-games.com" target="_blank">
-                <div class="work-content">GrappleShot: fast-paced, class-based, movement focused FPS</div>
-              </a>
-            </div>
-            <div class="card">
-              <img class="work-img" src="/media/rocketship.png">
-              <a target="_blank">
-                <div class="work-content">More coming soon.</div>
-              </a>
-            </div>
-          </div>
-          <!--───────────────Team───────────────-->
-          <div id="team">
-            <h3>Team
-              <hr>
-            </h3>
-            <p>These people are pretty cool.</p>
-            <div class="work-box">
-              <div class="work">
-                <!--───────────────card───────────────-->
-                <div class="card">
-                  <img class="work-img" src="/media/maxb0tbeep.png">
-                  <a href="https://fanlink.to/maxb0tbeep" target="_blank">
-                    <div class="work-content">Maxb0tbeep<br></br>CEO & Developer</div>
-                  </a>
-                </div>
-                <div class="card">
-                  <img class="work-img" src="/media/coolboi21.png">
-                  <a href="https://www.youtube.com/channel/UC72e2Z9DXv-HFpOqjoR-3mw" target="_blank">
-                    <div class="work-content">Coolboi_21<br></br>Developer</div>
-                  </a>
-                </div>
-              </div>
-              <!--──────────────Contact────────────────-->
-              <div id="socials">
-                <!--────social media links─────-->
-                <h3>Social Links
-                  <hr>
-                </h3>
-                <p>Got a question? We'll get back to you here</p>
-                <div class="social-media">
-                  <a href="https://maxb0tbeep.itch.io/grappleshot" target="_blank"><i class="fa-brands fa-itch-io"></i></i></a>
-                  <a href="http://discord.gg/ZwJVNQs" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                  <a href="https://twitter.com/LaunchpadGames0" target="_blank"><i class='fab fa-twitter'></i></a>
-                  <a href="https://twitch.tv/directory/game/grappleshot" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-                  <a href="https://www.reddit.com/r/grappleshot/" target="_blank"><i class="fa-brands fa-reddit"></i></a>
-                  <a href="https://www.youtube.com/channel/UC5eAoYcEUfSWlX0GddiE2Rg" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-                <br><br><br>
-                <p id="captchaText">Prefer email? Please complete the Captcha to continue</p>
-                <!-- contact email -->
-                <form onsubmit="return checkform(this);" class="formmargin" id="captcha">
-                  <div class="capbox">
-                    <div id="CaptchaDiv"></div>
-                    <div class="capbox-inner"> Enter the number:<br>
-                      <input type="hidden" id="txtCaptcha">
-                      <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-                      <br><input type="submit" value="Submit" class="subbutx3" id="captchaButton"><br>
-                    </div>
-                  </div>
-                  <br>
-                  <br>
-                </form>
-              </div>
-              <script type="text/javascript">
-                // Captcha Script
-                function checkform(theform) {
-                  var why = "";
-                  if (theform.CaptchaInput.value == "") {
-                    document.getElementById("captchaText").innerHTML = "Please Enter the Captcha Code.";
-                    return false;
-                  }
-                  if (theform.CaptchaInput.value != "") {
-                    if (ValidCaptcha(theform.CaptchaInput.value) == false) {
-                      document.getElementById("captchaText").innerHTML = "The CAPTCHA Code Does Not Match.";
-                      return false;
-                    }
-                  }
-                  if (theform.CaptchaInput.value != "") {
-                    if (ValidCaptcha(theform.CaptchaInput.value) == true) {
-                      document.getElementById("captcha").remove();
-                      document.getElementById("captchaText").innerHTML = "support@launchpad-games.com";
-                      return false;
-                    }
-                  }
-                }
-                var a = Math.ceil(Math.random() * 9) + '';
-                var b = Math.ceil(Math.random() * 9) + '';
-                var c = Math.ceil(Math.random() * 9) + '';
-                var d = Math.ceil(Math.random() * 9) + '';
-                var e = Math.ceil(Math.random() * 9) + '';
-                var f = Math.ceil(Math.random() * 9) + '';
-                var code = a + b + c + d + e + f;
-                document.getElementById("txtCaptcha").value = code;
-                document.getElementById("CaptchaDiv").innerHTML = code;
-                // Validate input against the generated number
-                function ValidCaptcha() {
-                  var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                  var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                  if (str1 == str2) {
-                    return true;
-                  } else {
-                    return false;
-                  }
-                }
-                // Remove the spaces from the entered and generated code
-                function removeSpaces(string) {
-                  return string.split(' ').join('');
-                }
-              </script>
+        <p>Got a question? We'll get back to you here</p>
+        <div class="social-media">
+          <a href="https://maxb0tbeep.itch.io/grappleshot" target="_blank"><i class="fa-brands fa-itch-io"></i></i></a>
+          <a href="http://discord.gg/ZwJVNQs" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://twitter.com/LaunchpadGames0" target="_blank"><i class='fab fa-twitter'></i></a>
+          <a href="https://twitch.tv/directory/game/grappleshot" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+          <a href="https://www.reddit.com/r/grappleshot/" target="_blank"><i class="fa-brands fa-reddit"></i></a>
+          <a href="https://www.youtube.com/channel/UC5eAoYcEUfSWlX0GddiE2Rg" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <br><br><br>
     </main>
     <footer class="copyright">
       <p>© 2022 Launchpad Games</p>
+      <a href="https://www.launchpad-games.com/privacy-policy.html">By visiting this website, you agree to our privacy policy.</a></p>
     </footer>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
