@@ -262,7 +262,7 @@ a.nav-link{
 }
 
 #home .filter{
-	background: url('/media/gs-bg.png') no-repeat;
+	background: url('/media/gs-bg.apng') no-repeat;
 	background-size: cover;
 	background-position:center;
     position: absolute;
