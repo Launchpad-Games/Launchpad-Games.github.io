@@ -35,3 +35,9 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+function year(){
+	document.getElementById("year").innerHTML = `© ${new Date().getFullYear()} Launchpad Games`
+}
+
+window.onload = year;
